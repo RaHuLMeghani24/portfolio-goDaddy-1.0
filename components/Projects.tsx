@@ -36,7 +36,9 @@ export default function Projects({ projects }: Props) {
             <div className="space-y-5 md:space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-lg md:text-2xl lg:text-4xl font-semibold text-center">
                 <span className="underline decoration-darkGreen/50">
-                  Project {i + 1}:
+                  <a href={project?.linkToBuild} target="_blank">
+                    Project {i + 1}
+                  </a>
                 </span>{" "}
                 {project?.title}
               </h4>
