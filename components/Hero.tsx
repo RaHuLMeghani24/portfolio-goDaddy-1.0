@@ -10,12 +10,13 @@ type Props = { pageInfo: PageInfo };
 export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
-      `Hi, I'm ${pageInfo?.name}`,
-      "I_like_to_code.py",
-      "And I'm addicted to ☕️",
+      `Hi, I'm <${pageInfo?.name}/>`,
+      "Guy-who-likes-coffee.tsx",
+      "And addicted to Post Malone🎵",
     ],
     loop: true,
     delaySpeed: 2000,
+    deleteSpeed: 35,
   });
 
   return (
