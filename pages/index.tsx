@@ -33,7 +33,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
     <>
       <Head>
-        <title>Rahul's Portfolio</title>
+        <title>{"Rahul's Portfolio"}</title>
       </Head>
       <div
         className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
