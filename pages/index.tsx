@@ -1,10 +1,10 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import { Experience, PageInfo, Skill, Project, Social } from "../typings";
-import { fetchPageInfo } from "../utils/fetchPageInfo";
-import { fetchExperiences } from "../utils/fetchExperience";
-import { fetchProjects } from "../utils/fetchProjects";
-import { fetchSkills } from "../utils/fetchSkills";
+// import { fetchPageInfo } from "../utils/fetchPageInfo";
+// import { fetchExperiences } from "../utils/fetchExperience";
+// import { fetchProjects } from "../utils/fetchProjects";
+// import { fetchSkills } from "../utils/fetchSkills";
 import About from "../components/About";
 import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
@@ -16,7 +16,14 @@ import Image from "next/image";
 // import { Inter } from "next/font/google";
 // import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
-import { fetchSocials } from "../utils/fetchSocials";
+import {
+  fetchPageInfo,
+  fetchExperiences,
+  fetchProjects,
+  fetchSkills,
+  fetchSocials,
+} from "@/utils/fetchService";
+//import { fetchSocials } from "../utils/fetchSocials";
 import Hero from "@/components/Hero";
 
 //const inter = Inter({ subsets: ["latin"] });
