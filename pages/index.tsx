@@ -45,8 +45,8 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
         <title>{"Rahul's Portfolio"}</title>
       </Head>
       <div
-        className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
-      overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]]/80"
+        className="bg-[rgb(36,36,36)] text-white h-screen snap-mandatory
+      overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
       >
         {/* Header */}
         <Header socials={socials} />
@@ -59,7 +59,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <About pageInfo={pageInfo} />
         </section>
         {/* Experiences */}
-        <section id="experience" className="snap-center">
+        <section id="experience" className="snap-start">
           <WorkExperience experiences={experiences} />
         </section>
         {/* Skills */}
